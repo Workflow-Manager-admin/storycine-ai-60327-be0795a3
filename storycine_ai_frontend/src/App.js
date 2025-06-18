@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import StabilityDemo from './StabilityDemo';
+import ElevenLabsDemo from './ElevenLabsDemo';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           </div>
           {/* SAMPLE: Stability AI Integration Demo */}
           <StabilityDemo />
+          {/* SAMPLE: ElevenLabs Text-to-Speech Integration Demo */}
+          <ElevenLabsDemo />
         </div>
       </main>
     </div>
