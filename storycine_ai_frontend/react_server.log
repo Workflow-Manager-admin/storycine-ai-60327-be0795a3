@@ -7,33 +7,150 @@
 <i> [webpack-dev-server] On Your Network (IPv4): http://172.17.0.2:3000/
 <i> [webpack-dev-server] Content not from webpack is served from './public' directory
 Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
-asset bundle.js 1.41 MiB [emitted] (name: main)
+asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
-modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 22.6 KiB
-  modules by path ./src/*.js 8.77 KiB 4 modules
-  modules by path ./src/*.css 7.49 KiB 4 modules
-  modules by path ./src/services/*.js 6.35 KiB
-    ./src/services/stabilityApi.js 3.03 KiB [built] [code generated]
-    ./src/services/elevenLabsApi.js 3.32 KiB [built] [code generated]
-modules by path ./.ve/ 15.1 KiB
-  modules by path ./.ve/*.js 10.6 KiB 2 modules
-  modules by path ./.ve/*.css 2.93 KiB
-    ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
-    ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
-  ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1352 ms
+cacheable modules 1.28 MiB
+  modules by path ./node_modules/ 1.24 MiB 31 modules
+  modules by path ./src/ 30.9 KiB
+    modules by path ./src/*.js 14.1 KiB 5 modules
+    modules by path ./src/*.css 7.49 KiB 4 modules
+    modules by path ./src/services/*.js 9.28 KiB
+      ./src/services/stabilityApi.js 3.03 KiB [built] [code generated]
+      + 2 modules
+  modules by path ./.ve/ 15.1 KiB
+    modules by path ./.ve/*.js 10.6 KiB 2 modules
+    modules by path ./.ve/*.css 2.93 KiB 2 modules
+    ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 1332 ms
 assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.44 MiB
-  asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.d6c8bd803e9e123e2127.hot-update.js 17.1 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.d6c8bd803e9e123e2127.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.44 MiB = bundle.js 1.42 MiB main.d6c8bd803e9e123e2127.hot-update.js 17.1 KiB
-cached modules 1.27 MiB [cached] 45 modules
+assets by path *.js 1.45 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.1c5c79226a311fee89a9.hot-update.js 15.7 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.1c5c79226a311fee89a9.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.43 MiB main.1c5c79226a311fee89a9.hot-update.js 15.7 KiB
+cached modules 1.28 MiB [cached] 47 modules
 runtime modules 27.5 KiB 14 modules
-javascript modules 10.8 KiB
-  ./src/App.js 2.64 KiB [built] [code generated]
-  ./src/TMDBDemo.js 5.2 KiB [built] [code generated]
-  ./src/services/tmdbApi.js 2.93 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 128 ms
+./src/App.js 10.3 KiB [built] [code generated]
+
+ERROR in ./src/App.js 8:0-46
+Module not found: Error: Can't resolve './StoryInputForm' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 9:0-52
+Module not found: Error: Can't resolve './ProgressIndicator' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 10:0-40
+Module not found: Error: Can't resolve './VideoPlayer' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+ @ ./src/index.js 5:0-24 11:32-35
+
+3 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.99.9 compiled with 3 errors in 143 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.45 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.98d9ea576c5bcbbd7748.hot-update.js 20.1 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.98d9ea576c5bcbbd7748.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.43 MiB main.98d9ea576c5bcbbd7748.hot-update.js 20.1 KiB
+cached modules 1.28 MiB [cached] 47 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 13.3 KiB
+  ./src/App.js 10.3 KiB [code generated]
+  ./src/StoryInputForm.js 3.04 KiB [built] [code generated]
+
+ERROR in ./src/App.js 9:0-52
+Module not found: Error: Can't resolve './ProgressIndicator' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+resolve './ProgressIndicator' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+  using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src/ProgressIndicator)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/ProgressIndicator doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/ProgressIndicator.js doesn't exist
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/ProgressIndicator.jsx doesn't exist
+      as directory
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/ProgressIndicator doesn't exist
+ @ ./src/index.js 5:0-24 11:32-35
+
+ERROR in ./src/App.js 10:0-40
+Module not found: Error: Can't resolve './VideoPlayer' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+resolve './VideoPlayer' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+  using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src/VideoPlayer)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer.js doesn't exist
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer.jsx doesn't exist
+      as directory
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer doesn't exist
+ @ ./src/index.js 5:0-24 11:32-35
+
+webpack 5.99.9 compiled with 2 errors in 57 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.46 MiB
+  asset bundle.js 1.44 MiB [emitted] (name: main)
+  asset main.1f252062f42244ade508.hot-update.js 20.4 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.1f252062f42244ade508.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.46 MiB = bundle.js 1.44 MiB main.1f252062f42244ade508.hot-update.js 20.4 KiB
+cached modules 1.28 MiB [cached] 48 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 13.5 KiB
+  ./src/App.js 10.3 KiB [code generated]
+  ./src/ProgressIndicator.js 3.19 KiB [built] [code generated]
+
+ERROR in ./src/App.js 10:0-40
+Module not found: Error: Can't resolve './VideoPlayer' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+resolve './VideoPlayer' in '/home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src'
+  using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/package.json (relative path: ./src/VideoPlayer)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer.js doesn't exist
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer.jsx doesn't exist
+      as directory
+        /home/kavia/workspace/code-generation/storycine-ai-60327-be0795a3/storycine_ai_frontend/src/VideoPlayer doesn't exist
+ @ ./src/index.js 5:0-24 11:32-35
+
+webpack 5.99.9 compiled with 1 error in 58 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.46 MiB
+  asset bundle.js 1.44 MiB [emitted] (name: main)
+  asset main.1aeee1ebb90f24619897.hot-update.js 18.4 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.1aeee1ebb90f24619897.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.46 MiB = bundle.js 1.44 MiB main.1aeee1ebb90f24619897.hot-update.js 18.4 KiB
+cached modules 1.29 MiB [cached] 49 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 12.1 KiB
+  ./src/App.js 10.3 KiB [code generated]
+  ./src/VideoPlayer.js 1.8 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 41 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.45 MiB
+  asset bundle.js 1.44 MiB [emitted] (name: main)
+  asset main.5d4fbbdba4d6fbff5851.hot-update.js 4.66 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.5d4fbbdba4d6fbff5851.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.44 MiB main.5d4fbbdba4d6fbff5851.hot-update.js 4.66 KiB
+cached modules 1.3 MiB [cached] 50 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/App.css 2.2 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 45 ms

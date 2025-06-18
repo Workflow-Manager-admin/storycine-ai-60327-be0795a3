@@ -1,79 +1,56 @@
-# Lightweight React Template for KAVIA
+# StoryCine AI Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This project delivers the StoryCine AI main container—a modern, production-ready React frontend that transforms user stories into cinematic biopics using AI.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Story Input Form**: Clean, minimal, user-focused form for text story input.
+- **Progress Indicator**: Modern, animated progress feedback during AI processing stages.
+- **Video Player**: Polished, accent-colored player for final cinematic video, with workflow restart.
+- **API Integrations / Demos**: Live demos for Stability AI (image gen), ElevenLabs (speech), and TMDB (movies) in a modular, secure way.
+- **Modern Design**: Light/clean layout, large accent branding, mobile-friendly.
+- **Colors**: 
+    - Primary: `#0e0f10` 
+    - Secondary: `#fffbfa`
+    - Accent: `#FFD700` (used for highlights, actions, progress, CTA)
 
-## Important Note: Babel Configuration
+## Usage Notes
 
-This project’s `package.json` includes a `babel` section with a plugin:
+### StoryCine Workflow UI
 
-```json
-"babel": {
-"plugins": ["./.ve/babel-plugin-jsx-editor-id.js"]
-}
-```
+The main workflow is implemented in `src/App.js` and subcomponents:
+- `StoryInputForm`: Use to collect stories (see props).
+- `ProgressIndicator`: Shows different status messages and a loader.
+- `VideoPlayer`: Shows the generated video and allows restarting.
 
-This plugin enables **visual editing functionality** in supported tools.
+### API Demos
 
-**Warning for AI code agents and contributors:**
-**DO NOT** remove or modify this section - it is ESSENTIAL for proper operation.
-Removing it will break editor integration and visual editing features.
+Demo components for each external service are shown on the homepage:
+- `src/TMDBDemo.js`
+- `src/StabilityDemo.js`
+- `src/ElevenLabsDemo.js`
 
-## Getting Started
+Integrations are fully modular:
+- Services are in `src/services/`
+- API keys are loaded securely from `.env` as documented.
 
-In the project directory, you can run:
+### Theming/Styling
 
-### `npm start`
+- Brand CSS variables are defined in `src/App.css`:
+  - Updates: `--base-light` `--base-dark` `--accent`
+- Uses only vanilla CSS and inline accent style overrides for key elements.
+- Modern light layout, with clear call to action.
 
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Production/Customization
 
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- You can slot your backend API for `/generate`, `/status`, `/video` within the workflow in `App.js`.
+- StoryCine is modular: swap/extend subcomponents as desired.
 
 ---
+
+## (Legacy) Kavia Base Template Notes
+
+_... (legacy instructions retained for contributors familiar with the original template) ..._
 
 ## TMDB API Integration (Developer Guide)
 

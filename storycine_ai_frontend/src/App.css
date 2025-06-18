@@ -1,9 +1,11 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --base-light: #FFD700;
+  --base-dark: #0e0f10;
+  --text-color: #0e0f10;
+  --text-secondary: #888889;
+  --bg-secondary: #fffbfa;
+  --accent: #FFD700;
+  --border-color: #e7e5e0;
 }
 
 body {
