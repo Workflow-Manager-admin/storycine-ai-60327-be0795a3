@@ -129,14 +129,12 @@ function App() {
             }}
           >
             {/* Story input form */}
-            {!submittedStory && (
-              <StoryInputForm
-                accentColor={colorSpec.accent}
-                onSubmit={handleStorySubmit}
-                disabled={processing}
-              />
-            )}
-            {/* Progress display */}
+            <StoryInputForm
+              accentColor={colorSpec.accent}
+              onSubmit={handleStorySubmit}
+              disabled={processing}
+            />
+            {/* Progress display (always rendered, but visible only if story submitted and processing) */}
             {submittedStory && processing && (
               <ProgressIndicator
                 story={submittedStory}
@@ -144,7 +142,7 @@ function App() {
                 accentColor={colorSpec.accent}
               />
             )}
-            {/* Video player */}
+            {/* Video player (shown only if video is available after processing) */}
             {submittedStory && !processing && videoUrl && (
               <VideoPlayer
                 videoUrl={videoUrl}
