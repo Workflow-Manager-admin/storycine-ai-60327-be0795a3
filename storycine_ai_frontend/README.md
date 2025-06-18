@@ -31,7 +31,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in development mode.\
+Runs the app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test`
@@ -40,7 +40,7 @@ Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Customization
@@ -75,6 +75,39 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ---
 
+## TMDB API Integration (Developer Guide)
+
+This project includes a reusable service for communicating with the [TMDB API](https://www.themoviedb.org/documentation/api), located at `src/services/tmdbApi.js`.
+
+### ⚠️ How to Set Up Your TMDB API Key Securely
+
+**NEVER** hardcode your TMDB API key in source files or share your .env publicly.
+
+#### Use a `.env` file!
+
+1. Create a file named `.env` in the `storycine_ai_frontend/` folder (alongside `package.json`).
+
+2. Add your TMDB API key:
+    ```
+    REACT_APP_TMDB_API_KEY=5bc67d3b06aecbd18121a3cbbc16eb59
+    ```
+3. Restart your development server after changes to the `.env` file.
+
+4. The React app will pick up this key at runtime and sends it to TMDB only in browser requests.
+
+#### Sample Usage
+
+- See `src/TMDBDemo.js` for an interactive usage example.
+- For advanced usage, import and call functions from `src/services/tmdbApi.js`.
+- You may access `searchMovies(query)` or extend as needed (e.g., get movie details).
+
+**Security notes:**
+- Never expose your API key publicly.
+- Do not commit `.env` to source control.
+- See TMDB’s terms for proper API usage.
+
+---
+
 ## Stability AI API Integration (Developer Guide)
 
 This project includes a reusable service for communicating with the [Stability AI API](https://platform.stability.ai/), located at `src/services/stabilityApi.js`.
@@ -104,6 +137,14 @@ This project includes a reusable service for communicating with the [Stability A
 **Important security notes:**
 - Never expose your secret API key in public repositories or client-side logs.
 - Consider using a backend proxy for stricter security if you distribute your frontend broadly.
+
+---
+
+## ElevenLabs API Integration
+
+- The project includes a reusable ElevenLabs text-to-speech service and a sample component as a demo.
+- Add your ElevenLabs API key to `.env` as `REACT_APP_ELEVENLABS_API_KEY`.
+- See `src/ElevenLabsDemo.js` and `src/services/elevenLabsApi.js` for details.
 
 ---
 
